@@ -1,5 +1,3 @@
-import sys
-
 def message_coder(message, passcode):
     characters = list(message)
 
