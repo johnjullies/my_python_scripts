@@ -16,9 +16,15 @@ def message_coder(message, passcode):
 
             characters[i] = chr(character_num)
 
-    print ''.join(characters)
+    print 'Coded message: %s' % (''.join(characters))
+
+def main():
+    message = raw_input('Enter message to code: ')
+    passcode = input('Enter passcode: ')
+
+    print 'Coding...'
+
+    message_coder(message, passcode)
 
 if __name__ == '__main__':
-    message = sys.argv[1]
-    passcode = int(sys.argv[2])
-    message_coder(message, passcode)
+    main()

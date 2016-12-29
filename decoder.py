@@ -16,9 +16,15 @@ def decoder(message, passcode):
 
             characters[i] = chr(character_num)
 
-    print ''.join(characters)
+    print 'Decoded message: %s' % (''.join(characters))
+
+def main():
+    message = raw_input('Enter message to decode: ')
+    passcode = input('Enter the passcode: ')
+
+    print 'Decoding...'
+
+    decoder(message, passcode)
 
 if __name__ == '__main__':
-    message = sys.argv[1]
-    passcode = int(sys.argv[2])
-    decoder(message, passcode)
+    main()
