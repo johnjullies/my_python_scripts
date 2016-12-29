@@ -18,4 +18,7 @@ def message_coder(message, passcode):
 
     print ''.join(characters)
 
-message_coder(sys.argv[1], int(sys.argv[2]))
+if __name__ == '__main__':
+    message = sys.argv[1]
+    passcode = int(sys.argv[2])
+    message_coder(message, passcode)

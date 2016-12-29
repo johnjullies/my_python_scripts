@@ -18,4 +18,7 @@ def decoder(message, passcode):
 
     print ''.join(characters)
 
-decoder(sys.argv[1], int(sys.argv[2]))
+if __name__ == '__main__':
+    message = sys.argv[1]
+    passcode = int(sys.argv[2])
+    decoder(message, passcode)
